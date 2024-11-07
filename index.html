@@ -7,35 +7,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.js"></script>
     <link rel="stylesheet" href="css/modify.css" />
-    <title>World-Clock</title>
+    <title>World-Clock/Hungpi</title>
   </head>
   <body>
     <div class="container">
-<h1>World-Clock</h1>
-<select>
-   
-<option value="">Select a city..</option>
-<option value="">Yangon</option>
-<option value="">Seoul</option>
-<option value="">Bangkok</option>
-</select>
-<div class="city">
-    <h2>Busan</h2>
-    <div class="date">August 15th 2024</div>
-    <div class="time">1:55:20 AM</div>
-</div>
-<div class="city">
-    <h2>Hakha</h2>
-    <div class="date">August 5th 2024</div>
-    <div class="time">4:55:20 AM</div>
-</div>
+      <h1>World-Clock</h1>
+
+      <select id="city">
+        <option value="">Select a city..</option>
+        <option value="current">My current location</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Pacific/Auckland">Auckland</option>
+      </select>
+      <div id="cities">
+        <div class="city" id="los-angeles">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
     </div>
-    
+    <footer>
       This project was coded with by Hungpi and is
       <a href="https://github.com/Hungpi-zomi/World-Clock" target="_blank">
         open sourced on github
       </a>
     </footer>
+
     <script src="javascript/action.js"></script>
   </body>
 </html>
